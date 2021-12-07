@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+
+.container {
+    width: 70%;
+    height: 70%;
+    display:flex;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 8%;
+}
+
+.section_sedans, .section_suv, .section_luxury {
+    width: 33.33%;
+    height: 100%;
+    background: hsl(184, 100%, 22%);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.section_sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5%;
+}
+
+.section_luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 8%;
+}
+
+.section_tittle {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section_button {
+    border: none;
+    width: 65%;
+    height: 15%;
+    border-radius: 50px;
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    transition: ease 300ms;
+    filter: saturate(0%);
+    margin-top: 35px;
+}
+
+#luxury_button {
+    color: hsl(179, 100%, 13%);
+}
+
+#suv_button {
+    color: hsl(184, 100%, 22%);
+}
+
+.section_button:hover {
+    transform: scale(1.15);
+    filter: saturate(100%)
+}
